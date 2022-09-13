@@ -1,0 +1,9 @@
+c(every string begin from char, which mean the type of this string, DON'T delete any of this char, and don't change the atributes positions! But you can change the whole string I do not recommend change any of this attribute, but in case you want to do it, don't use float, or negative values!)
+c Barbarian:
+a max_move_speed: 3 health: 20 reward: 10
+c Rogue:
+b max_move_speed: 7 health: 10 reward: 15
+c Shieldman:
+d max_move_speed: 2 health: 120 reward: 30
+c Giant:
+e max_move_speed: 1 health: 500 reward: 50

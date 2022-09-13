@@ -1,0 +1,18 @@
+Projekt "SimpleTower" - tahová hra.
+Se skládá ze hlavičkovych souboru: "map", "tower", "enemy", "game", "player". 
+Map obsahuje třídu, metody pro generování, uložení a načtení z vybraného adresáře mapy 25/25, generování cestu pro nepřítele na mape, buňky pro umístění věže, na okraji mapy jsou (odlišné od sebe v souřadnicích) 2 pozice (vstup a výstup).
+Tower obsahuje třídy pro 5 typů věží(cannon, wizzard, archer, crossbow, inferno), lišících se cenou, dostřelem a rychlostí střelby. Každá věž má svůj vlastní vizuální model. Wizzard a inferno mají svůj vlastní efekt (zpomalení, rostoucí poškození v průběhu času).
+Enemy se skládá z tříd a metod pro implementaci 4 typů útočníků: rogue, barbarian, giant, shieldman. Každý nepřítel má svůj vlastní vizuální model, svou vlastní rychlost pohybu (giant -> shieldman -> barbarian -> rogue), množství zdraví (pokud zdraví dosáhne 0, nepřítel zmizí z mapy).
+Player obsahuje třídu a metody implementace ukládání skóre a počtu mincí obdržených po zničení nepřítele
+Hlavičkový soubor "game" obsahuje funkce pro implementaci hry. Hra má 3 úrovně obtížnosti, liší se počtem a typem protivníků, polymorfismus je zde použit k implementaci. Více podrobností v popisu funkcí.
+Polymorfismus bude použit k implementaci různých typů věží, úrovní obtížnosti a protivníků. Všechny třídy budou potomky, které jsou zděděny z abstraktní třídy, která má protected atributy cost, range, attack_speed. A také implementovat různé typy protivníků. Příkládám hlavičkové soubory, kde je vidět nachystaný polymorfismus.
+
+
+Project "SimpleTower" - a turn-based game.
+It consists of header files: "map", "tower", "enemy", "game", "player".
+The map contains a class, methods for generating, saving and loading from the selected directory of the 25/25 map, generating a path for the enemy on the map, cells for placing the tower, on the edge of the map there are (different from each other in coordinates) 2 positions (input and output).
+Tower contains classes for 5 types of towers (cannon, wizzard, archer, crossbow, inferno), differing in price, range and firing rate. Each tower has its own visual model. Wizzard and inferno have their own effect (slow, increasing damage over time).
+Enemy consists of classes and methods to implement 4 types of attackers: rogue, barbarian, giant, shieldman. Each enemy has its own visual model, its own movement speed (giant -> shieldman -> barbarian -> rogue), amount of health (if the health reaches 0, the enemy disappears from the map).
+Player contains a class and methods to implement saving the score and the number of coins received after destroying an enemy
+The "game" header file contains functions to implement the game. The game has 3 levels of difficulty, they differ in the number and type of opponents, polymorphism is used here to implement. More details in the feature description.
+Polymorphism will be used to implement different tower types, difficulty levels and opponents. All classes will be descendants that inherit from an abstract class that has the protected attributes cost, range, attack_speed. And also implement different types of opponents. I am attaching the header files where the prepared polymorphism can be seen.

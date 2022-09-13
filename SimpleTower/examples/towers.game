@@ -1,0 +1,11 @@
+c(every string begin from char, which mean the type of this string, DON'T delete any of this char, and don't change the atributes positions! I do not recommend change any of this attribute, but in case you want to do it, don't use float, or negative values!)
+c Cannon:
+a Cost: 100 attack_speed: 1 range: 4 attack: 30
+c Archer:
+b Cost: 200 attack_speed: 2 range: 8 attack: 15
+c Crossbow:
+d Cost: 500 attack_speed: 5 range: 6 attack: 20
+c Wizard:
+e Cost: 500 attack_speed: 4 range: 6 attack: 5
+c Inferno:
+f Cost: 500 attack_speed: 2 range: 4 attack: 1
